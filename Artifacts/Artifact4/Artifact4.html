@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="description" content="Artifact #4 - Form Validation">
+    <meta charset="utf-8">
+    <meta name="Viewport" content="width=device-width">
+
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/kolar" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="css/Artifact4StyleSheet.css" />
+
+    <title>Artifact #4</title>
+
+   
+</head>
+<body>
+
+    <!-- Code from my contact me form here to start-->
+    <div id="contentWrapper">
+
+       
+        <!--  <form autocomplete="off"> -->
+
+        <form id="ValForm" autocomplete="off" action="thankyou.html" onsubmit="return ValidateForm();">
+            <fieldset id="ContactingMeInfo">
+                <legend>Validation Exercise</legend>
+
+                <label for="FirstName">First Name (max 20): </label>
+                <input type="text" name="FirstName" id="FirstName" placeholder="First Name" />
+                <div id="FirstNameError" class="ErrorMsg"></div>
+
+                <label for="LastName">Last Name (max 50): </label>
+                <input type="text" name="LastName" id="LastName" placeholder="Last Name" />
+                <div id="LastNameError" class="ErrorMsg"></div>
+
+                <label for="Email">Your Email:</label>
+                <input type="text" name="Email" id="Email" placeholder="Your Email" />
+                <div id="EmailError" class="ErrorMsg"></div>
+
+                <label for="Phone">Phone (max 15):</label>
+                <input type="text" name="Phone" id="Phone" placeholder="nnn-nnn-nnnn" />
+                <div id="PhoneError" class="ErrorMsg"></div>
+
+                <label for="UserName">User Name (max 12): </label>
+                <input type="text" name="UserName" id="UserName" placeholder="User Name" />
+                <div id="UserNameError" class="ErrorMsg"></div>
+
+                <label for="Password">Password (max 7): </label>
+                <input type="text" name="Password" id="Password" placeholder="Password" />
+                <div id="PasswordError" class="ErrorMsg"></div>
+
+                <label for="StreetAddress">Street Address:</label>
+                <input type="text" name="StreetAddress" id="StreetAddress" placeholder="Street Address" />
+                <div id="StreetAddError" class="ErrorMsg"></div>
+
+                <label for="City">City:</label>
+                <input type="text" name="City" id="City" placeholder="City" />
+                <div id="CityError" class="ErrorMsg"></div>
+
+                <label for="State">State:</label>
+                <select id="State" name="State">
+                    <option value="000" selected="selected">[choose your state]</option>
+                    <option value="Alabama">Alabama</option>
+                    <option value="Alaska">Alaska</option>
+                    <option value="Arizona">Arizona</option>
+                    <option value="Arkansas">Arkansas</option>
+                    <option value="California">California</option>
+                    <option value="Colorado">Colorado</option>
+                    <option value="Connecticut">Connecticut</option>
+                    <option value="Delaware">Delaware</option>
+                    <option value="District of Columbia">District of Columbia</option>
+                    <option value="Florida">Florida</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Hawaii">Hawaii</option>
+                    <option value="Idaho">Idaho</option>
+                    <option value="Illinois">Illinois</option>
+                    <option value="Indiana">Indiana</option>
+                    <option value="Iowa">Iowa</option>
+                    <option value="Kansas">Kansas</option>
+                    <option value="Kentucky">Kentucky</option>
+                    <option value="Louisiana">Louisiana</option>
+                    <option value="Maine">Maine</option>
+                    <option value="Maryland">Maryland</option>
+                    <option value="Massachusetts">Massachusetts</option>
+                    <option value="Michigan">Michigan</option>
+                    <option value="Minnesota">Minnesota</option>
+                    <option value="Mississippi">Mississippi</option>
+                    <option value="Missouri">Missouri</option>
+                    <option value="Montana">Montana</option>
+                    <option value="Nebraska">Nebraska</option>
+                    <option value="Nevada">Nevada</option>
+                    <option value="New Hampshire">New Hampshire</option>
+                    <option value="New Jersey">New Jersey</option>
+                    <option value="New Mexico">New Mexico</option>
+                    <option value="New York">New York</option>
+                    <option value="North Carolina">North Carolina</option>
+                    <option value="North Dakota">North Dakota</option>
+                    <option value="Ohio">Ohio</option>
+                    <option value="Oklahoma">Oklahoma</option>
+                    <option value="Oregon">Oregon</option>
+                    <option value="Pennsylvania">Pennsylvania</option>
+                    <option value="Rhode Island">Rhode Island</option>
+                    <option value="South Carolina">South Carolina</option>
+                    <option value="South Dakota">South Dakota</option>
+                    <option value="Tennessee">Tennessee</option>
+                    <option value="Texas">Texas</option>
+                    <option value="Utah">Utah</option>
+                    <option value="Vermont">Vermont</option>
+                    <option value="Virginia">Virginia</option>
+                    <option value="Washington">Washington</option>
+                    <option value="West Virginia">West Virginia</option>
+                    <option value="Wisconsin">Wisconsin</option>
+                    <option value="Wyoming">Wyoming</option>
+                </select>
+                <div id="StateError" class="ErrorMsg"></div>
+
+                <label for="Country">Country:</label>
+                <select id="Country" name="Country">
+                    <option value="000" selected="selected">[choose your country]</option>
+                    <option value="Canada">Canada</option>
+                    <option value="China">China</option>
+                    <option value="Columbia">Columbia</option>
+                    <option value="England">England</option>
+                    <option value="France">France</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="USA">USA</option>
+                </select>
+                <div id="CountryError" class="ErrorMsg"></div>
+
+                <label for="Zip">Zip (max 5):</label>
+                <input type="text" name="Zip" id="Zip" placeholder="nnnnn  Required for USA Residents" />
+                <div id="ZipError" class="ErrorMsg"></div>
+
+                <label for="Comments">Comments:</label>
+                <input type="text" name="Comments" id="Comments" placeholder="Optional" />
+
+                <br />
+                <div id="ContactSubmit">
+                    <!--  <input type="button" id="formSubmitButton" value="Submit" />  -->
+                    <input type="submit" value="Validate Form" />
+                </div>
+
+                <br />
+                <div id="errorMessages"></div>
+            </fieldset>
+        </form>
+        <br />
+        <br />
+
+        
+    </div> <!-- end div content wrapper -->
+
+    <!-- my javascript for validation-->
+    <script src="js/Artifact4JavaScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+﻿html, body
+{
+    background-color: black;
+}
+
+
+#myHeading {
+    font-family: 'AbibasMedium';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 28px;
+    color: #9900FF;
+    text-align: center;
+}
+
+
+#myName {
+    font-family: 'DancingScriptRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    color: #9900FF;
+    text-align: center;
+}
+
+
+#container {
+    margin: 25px auto;
+    background-color: #FFbb00;
+    border: 8px ridge gold;
+    width: 300px;
+    height: auto;
+    padding: 10px 30px;
+}
+
+#RhomTitle {
+    display: block;
+    font-family: 'AbibasMedium';
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 600;
+    color: #9900FF;
+    text-align: center;
+}
+
+
+#upSide, #downSide {
+    display: block;
+    text-align: center;
+}
+
+
+
+.clearIt{
+    clear:both;
+}
+
+
+#EvenColorPic, #OddColorPic {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #FFbb00;
+    margin: 1px 0px 0px 8px;
+    border: 1px solid black;
+    float: left;
+}
+
+#colorOdd, #colorEven{
+    display: block;
+    float: left;
+}
+

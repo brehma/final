@@ -1,0 +1,132 @@
+﻿
+/* Make sure older browsers at least display the new stuff as block */
+header, section, footer, aside, nave, article, figure, figcaption{
+    display:block;
+}
+
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    font-family: 'KolarRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+    background-image: url("../images/AlienPlanet1.jpg");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#myHeader {
+    font-size: 36px;
+    color: aqua; /*  #99f2ff;*/
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+}
+
+
+
+/* need a wrapper for everything to have it show ontop of the image.
+    Position it right below the menu
+*/
+
+#contentWrapper {
+    position: fixed;
+    top: 10px;
+    left: 0px;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    height: 100%;
+    overflow: scroll;
+}
+
+
+
+/* Contact Me page related    margin: 10px 0px 0px 5%;*/
+fieldset#ContactingMeInfo {
+    position: relative;
+    top: 10px;
+    background-color: rgbA(0, 0, 200, 0.35);
+    border: 2px solid rgb(0,0,0);
+    width: 60%;
+    min-width: 550px;
+    max-width: 750px;
+    color: aqua;
+    margin: 0 auto 0 auto;
+    text-shadow: 1px 1px 0px black; /* horizontal, virt, blur, color */
+
+}
+
+#ContactingMeInfo label {
+    clear: left;
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 7px 2% 7px 5px;
+    width: 20%;
+    
+}
+
+
+#ContactingMeInfo input {
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 7px 0px;
+    width: 75%;
+}
+
+
+#ContactingMeInfo select {
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 7px 0px;
+    width: 75%;
+}
+
+#ContactingMeInfo .ErrorMsg {
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 7px 0px;
+    color: red;
+    text-shadow: 1px 1px 0px black; /* horizontal, virt, blur, color */
+}
+
+#Comments input {
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 7px 0px;
+    width: 75%;
+    height: 100px;
+}
+
+#ContactSubmit input {
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 7px 0px;
+    width: 25%;
+
+}
+
+
+#errorMessages {
+    clear: left;
+    color: red;
+    text-align:center;
+    text-shadow: 1px 1px 0px black; /* horizontal, virt, blur, color */
+}

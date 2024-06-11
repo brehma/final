@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="Viewport" content="width=device-width">
+    <meta name="description" content="Cary's World and interests" />
+    <meta name="keywords" content="Cary, Programmer, Spacecraft, USAF Officer" />
+
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/kolar" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="ProjectStyleSheet.css" />
+
+    <title>Contact Me</title>
+
+
+
+</head>
+
+<body>
+
+    <div id="FlexWrapper">
+
+
+        <div id="topmenu">
+
+            <ul>
+                <li><a href="index.html" tabindex="1">Home</a></li>
+                <li><a href="About.html" tabindex="2">About</a></li>
+                <li><a href="Coursework.html" tabindex="3">Coursework</a></li>
+                <li><a href="Artifacts.html" tabindex="4">Artifacts</a></li>
+                <li><a href="ModuleAssignments.html" tabindex="5">Module Assignments</a></li>
+                <li><a href="ContactMe.html" tabindex="6">Contact Me</a></li>
+                <li><a href="PersonalInterests.html" tabindex="7">Personal Interests</a></li>
+            </ul>
+
+        </div>  <!-- end div Top Menu -->
+
+
+
+        <div id="myHeader" tabindex="8">Contact Me!</div>
+
+
+        <!--  <form autocomplete="off"> -->
+        <form id="ValForm" autocomplete="off" action="Thankyou.html" onsubmit="return ValidateForm();">
+            <fieldset id="ContactingMeInfo">
+                <legend tabindex="9">Contact Information: &nbsp;&nbsp; All Fields Required!</legend>
+
+                <label for="FirstName" tabindex="10">First Name (max 20):</label>
+                <input type="text" name="FirstName" id="FirstName" tabindex="11" placeholder="First Name" />
+                <div id="FirstNameError" class="ErrorMsg" tabindex="12"></div>
+
+                <label for="LastName" tabindex="13">Last Name (max 50): </label>
+                <input type="text" name="LastName" id="LastName" tabindex="14" placeholder="Last Name" />
+                <div id="LastNameError" class="ErrorMsg" tabindex="15"></div>
+
+                <label for="Email" tabindex="16">Your Email:</label>
+                <input type="text" name="Email" id="Email" tabindex="17" placeholder="Your Email" />
+                <div id="EmailError" class="ErrorMsg" tabindex="18"></div>
+
+                <label for="SubjectInput" tabindex="19">Subject (max 50):</label>
+                <input type="text" name="SubjectInput" id="SubjectInput" tabindex="20" placeholder="Subject" />
+                <div id="SubjectError" class="ErrorMsg" tabindex="21"></div>
+
+                <label for="CommentsInput" tabindex="22">Comments (max 400):</label>
+                <textarea name="Comments" id="CommentsInput" tabindex="23" placeholder="What can I do for you!?"></textarea>
+                <div id="CommentError" class="ErrorMsg" tabindex="24"></div>
+
+
+                <div id="ContactSubmit">
+                    <!--  <input type="button" id="formSubmitButton" value="Submit" />  -->
+                    <input type="submit" tabindex="25" value="Send" />
+                </div>
+
+            </fieldset>
+        </form>
+
+    </div> <!-- end FlexWrapper Div-->
+
+    <div class="MainTextClass" id="FlexFooter">
+
+        <div class="Validators">
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:60px;height:22px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+            </a>
+        </div>
+
+        <div class="Validators">
+            <a href="https://validator.w3.org/check?uri=referer">
+                <img src="https://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="22" width="60" />
+            </a>
+
+        </div> <!-- end div Validators -->
+
+        <div class="DateDisplay"></div>
+
+    </div> <!-- end div MyFooter -->
+
+    <!-- Date time updater -->
+    <script src="js/ProjectDateTimeScript.js"></script>
+
+    <!-- link in form validator code. -->
+    <script src="js/ProjectContactMeJavaScript.js"></script>
+</body>
+</html>

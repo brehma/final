@@ -1,0 +1,97 @@
+﻿
+
+body {
+    background-image: url("images/Aurora.jpg");
+}
+
+
+#container {
+    margin-top: 12%;
+    margin-left: 10%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+}
+
+
+#title {
+    position: fixed;
+    display: block;
+    top: 0px;
+    left: 0px;
+    padding: 0px 0px 0px 0px;
+    margin: 2px 0px 2px 0px;
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+    z-index: 10;
+    font-family: 'AvaraBold';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 36px;
+}
+
+.chessPiece {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+}
+
+
+.row {
+    position: relative;
+    margin-left: 10%;
+    margin-right: 0%;
+   
+}
+
+.white {
+    position: relative;
+    border: 1px solid black;
+    width: 10%;
+    height: 60px;
+    background-color:aqua;
+    float: left;
+   
+    
+}
+
+.black {
+    position: relative;
+    border: 1px solid black;
+    width: 10%;
+    height: 60px;
+    background-color: darkblue;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+
+.footerImage {
+    align-content: center;
+    margin: 5px 0px 3px 0px;
+    border: 0;
+    width: 88px;
+    height: 31px
+}
+
+.NuText{
+    width:auto;
+    height:auto;
+}
+
+/* images are inline so use text-align to center rather than align-contents */
+#footer {
+    position: fixed;
+    display: block;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 5px 0px 0px 0px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    background-color: aqua;
+    text-align: center;
+}

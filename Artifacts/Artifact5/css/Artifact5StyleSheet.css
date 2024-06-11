@@ -1,0 +1,65 @@
+﻿body
+{
+    background-color: black;
+}
+
+
+#myHeader {
+    font-size: 36px;
+    font-weight:800;
+    color: blueviolet;
+    text-align: center;
+}
+
+
+#MainFigure {
+    margin: 20px auto;
+}
+
+
+#MainSlide {
+    display: block;
+    width: 700px;
+    height: 500px;
+    border: 5px inset blue;
+    margin: 0px auto;
+}
+
+#MainCaption {
+    font-size: 20px;
+    font-style: italic;
+    color: blueviolet;
+    text-align:center;
+}
+
+#ButtonDiv {
+    text-align: center;
+}
+
+/* Make sure the fade time === the java script interval timer time! */
+.myfading {
+    animation: fading 6s infinite
+}
+
+
+
+@keyframes fading {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+
+}
+
+
+#Validators{
+    display:block;
+    float:left;
+}

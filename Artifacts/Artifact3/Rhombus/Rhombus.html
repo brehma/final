@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="Viewport" content="width=device-width">
+    <meta name="description" content="Rhombus for Prog 109" />
+
+    <link rel="stylesheet" type="text/css" href="RhombusStyleSheet.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/dancing" type="text/css" />
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/abibas" type="text/css" />
+    <title>Rhumbus!</title>
+
+</head>
+<body>
+    <!-- NEED HEADING AND MY NAME IN HERE SOMEPLACE -->
+
+    <div id="myHeading">RHOMBUS!</div>
+    <p id="myName"> Created by:  Cary Gibson </p>
+
+    <div id="container">
+
+        <label>What is the size of the Rhombus?</label>
+        <br />
+        <input type="text" id="rHeight" value="5" size="5">
+
+        <div class="clearIt"></div>
+        <br />
+
+        <label>Please choose a color for the Even positions</label>
+        <br />
+        <select id="colorEven">
+            <option value="#FF0000">Red</option>
+            <option value="#FF8800">Orange</option>
+            <option value="#FFFF00">Yellow</option>
+            <option value="#88FF00">RedishGreen</option>
+            <option value="#00FF00">Green</option>
+            <option value="#00FF88">GreenBlueish</option>
+            <option value="#00FFFF">GreenBlue</option>
+            <option value="#0088FF">BlueGreenish</option>
+            <option value="#0000FF">Blue</option>
+            <option value="#8800FF">BlueRedish</option>
+            <option value="#FF00FF">BlueRed</option>
+        </select>
+        <div id="EvenColorPic"></div>  <!-- Might need this to all be in a container for this piece to show.-->
+
+        <div class="clearIt"></div>
+        <br />
+
+        <label>Please choose a color for the Odd positions</label>
+        <br />
+        <select id="colorOdd">
+            <option value="#FF0000">Red</option>
+            <option value="#FF8800">Orange</option>
+            <option value="#FFFF00">Yellow</option>
+            <option value="#88FF00">RedishGreen</option>
+            <option value="#00FF00">Green</option>
+            <option value="#00FF88">GreenBlueish</option>
+            <option value="#00FFFF">GreenBlue</option>
+            <option value="#0088FF">BlueGreenish</option>
+            <option value="#0000FF">Blue</option>
+            <option value="#8800FF">BlueRedish</option>
+            <option value="#FF00FF">BlueRed</option>
+        </select>
+
+
+        <div id="OddColorPic"></div>  <!-- Might need this to all be in a container for this piece to show.-->
+
+
+        <div class="clearIt"></div>
+        <br />
+
+
+        <label>Please choose a symbol for the Rhombus</label><br />
+        <select id="symbol">
+            <option value="*">*</option>
+            <option value="$">$</option>
+            <option value="@">@</option>
+            <option value="#">#</option>
+            <option value="&">&</option>
+            <option value="%">%</option>
+            <option value="0">0</option>
+        </select>
+
+        <div class="clearIt"></div>
+        <br />
+
+        <button onclick="createRhombus(document.getElementById('rHeight').value,
+document.getElementById('colorEven').value,
+document.getElementById('colorOdd').value,
+document.getElementById('symbol').value);">
+            Display Rhombus
+        </button>
+
+    </div>  <!--  end container   -->
+
+   
+
+    <div id="RhomTitle">Rhombus</div>
+    <div id="upSide"></div>
+    <div id="downSide"></div>
+
+    <!-- link in the js script  -->
+    <script src="Rhombus.js"></script>
+
+
+</body>
+</html>
