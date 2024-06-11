@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="Viewport" content="width=device-width">
+    <meta name="description" content="Cary's World and interests" />
+    <meta name="keywords" content="Cary, Programmer, Spacecraft, USAF Officer" />
+
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/kolar" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="ProjectStyleSheet.css" />
+
+    <title>Personal Interests</title>
+
+</head>
+
+<body>
+
+    <div id="FlexWrapper">
+
+        <div id="topmenu">
+
+            <ul>
+                <li><a href="index.html" tabindex="1">Home</a></li>
+                <li><a href="About.html" tabindex="2">About</a></li>
+                <li><a href="Coursework.html" tabindex="3">Coursework</a></li>
+                <li><a href="Artifacts.html" tabindex="4">Artifacts</a></li>
+                <li><a href="ModuleAssignments.html" tabindex="5">Module Assignments</a></li>
+                <li><a href="ContactMe.html" tabindex="6">Contact Me</a></li>
+                <li><a href="PersonalInterests.html" tabindex="7">Personal Interests</a></li>
+            </ul>
+
+
+        </div>  <!-- end div Top Menu -->
+
+
+
+        <div id="myHeader" tabindex="8">Personal Interests</div>
+
+
+        <button id="PersonalHomeAudioButton" tabindex="9">Play List On</button>
+
+        <div id="GalacticCruise" tabindex="16">
+            <a href="https://caryswebsite1.github.io/Prog-209/Module%206/SpaceTravel/SpaceTravel.html" target="_blank" tabindex="9">
+                Galactic Cruise Lines!
+                <!-- <img id="CruiseLiner" src="Images/LuxLiner4.jpg" alt="Galactic Cruise Lines Luxury Cruise Ship" title="Galactic Cruise Lines" /> -->
+
+            </a>
+        </div>
+
+
+        <div class="MainTextClass" id="PersonalText" tabindex="10">
+            <p>
+                Personal Interests..  &nbsp; ummmmm.....  Lots? <br />
+                I have many interests in many fields, ranging from cooking at a camp fire to space travel,
+                ancient times to midieval to future, fantasy to hard physics. <br />
+                On this page are a few links to a couple of them.  <br />
+                NOTE: &nbsp; The video  and slide show may take a few seconds to load up.
+                &nbsp;  Clicking or space bar, (if it has focus), starts and pauses the video.<br />
+                BEWARE, the "Galactic Cruise Lines" is a 3 minute banner ad I made. &nbsp; It has a big audio file that may take a bit to load. &nbsp;
+                It opens in a new page, the audio starts automatically and the whole thing loops!
+            </p>
+        </div>
+
+        <div id="SpacecraftPictures">
+
+            <figure id="SpaceMainFigure">
+                <img class="myfading" id="SpaceMainSlide" src="Images/Space/TitanIVLauchB.jpg" alt="Slide 0" title="" />
+
+                <figcaption class="myfading" id="SpaceMainCaption" tabindex="11">Loading...</figcaption>
+
+            </figure>
+
+
+                <div id="SpaceButtonDiv">
+                    <button id="SpacePrevBtn" tabindex="12">Previous</button>
+                    <button id="SpaceNextBtn" tabindex="13">Next</button>
+                    <button id="SpaceStopResume" data-State="Resume" tabindex="14">Resume Show</button>
+                </div>
+
+
+
+        </div> <!-- end div Spacecraft Pics -->
+
+
+        <div id="PersonalPageVideoContainer">
+            <video id="TheVideo" tabindex="16" controls>
+                <!--  <source src="video/SpaceX_Falcon_Heavy_Launch.mp4" type="video/mp4" /> -->
+                <source src="video/nasa_record_low_sea_ice.mp4" type="video/mp4" />
+            </video>
+            <p tabindex="15">Record Low Artic Ice</p>
+        </div>
+
+
+        <div id="ScubaPictures">
+
+            <figure id="ScubaFigure1">
+                <img id="Scuba1" src="Images/Scuba/ScubaInsideAWreck.jpg" alt="Scuba: Inside a wreck." title="" tabindex="18" />
+
+                <figcaption id="Scuba1Caption" tabindex="17">Inside a Wreck</figcaption>
+
+            </figure>
+
+            <figure id="ScubaFigure2">
+                <img id="Scuba2" src="Images/Scuba/ScubaPlaneWreck.jpg" alt="Scuba: Plane Wreck" title="" tabindex="20" />
+
+                <figcaption id="Scuba2Caption" tabindex="19">WWII Plane Wreck</figcaption>
+
+            </figure>
+
+            <figure id="ScubaFigure3">
+                <img id="Scuba3" src="Images/Scuba/ScubaStoneFace.jpg" alt="Scuba: Stone Face" title="" tabindex="22" />
+
+                <figcaption id="Scuba3Caption" tabindex="21">Ancient Stone Face</figcaption>
+
+            </figure>
+
+            <figure id="ScubaFigure4">
+                <img id="Scuba4" src="Images/Scuba/ScubaThailand.jpg" alt="Scuba: Coral in Thailand" title="" tabindex="24" />
+
+                <figcaption id="Scuba4Caption" tabindex="23">Coral in Thailand</figcaption>
+
+            </figure>
+        </div> <!-- end div scuba pictures -->
+
+
+    </div> <!-- end FlexWrapper Div-->
+
+    <div class="MainTextClass" id="FlexFooter">
+
+        <div class="Validators">
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:60px;height:22px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+            </a>
+        </div>
+
+        <div class="Validators">
+            <a href="https://validator.w3.org/check?uri=referer">
+                <img src="https://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="22" width="60" />
+            </a>
+
+        </div> <!-- end div Validators -->
+
+        <div class="DateDisplay"></div>
+
+    </div> <!-- end div MyFooter -->
+
+    <!-- Date time updater -->
+    <script src="js/ProjectDateTimeScript.js"></script>
+
+
+    <!-- Link in the javascript for the page. -->
+    <script src="js/ProjectPersonalJavaScript.js"></script>
+
+</body>
+</html>
